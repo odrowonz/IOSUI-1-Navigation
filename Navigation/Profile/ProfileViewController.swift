@@ -20,7 +20,7 @@ final class ProfileViewController: UIViewController {
             postTableView.reloadData()
         }
     }
-
+    
     private lazy var postTableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.toAutoLayout()
@@ -75,18 +75,7 @@ extension ProfileViewController: UITableViewDataSource {
     // Обработать нажатие на ячейку
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 {
-            //categoryTitle = categories[indexPath.row].title
-            //navigationController?.navigationBar.isHidden = true
             performSegue(withIdentifier: "toPhotoGallery", sender: self)
-            
-            /*UINavigationController.pushViewController(
-                if let cell = sender as? UITableViewCell {
-                    let i = redditListTableView.indexPathForCell(cell)!.row
-                    if segue.identifier == "toRestaurant" {
-                        let vc = segue.destinationViewController as RestaurantViewController
-                        vc.data = currentResponse[i] as NSDictionary
-                    }
-                }*/
         }
     }
     
@@ -134,7 +123,7 @@ extension ProfileViewController: UITableViewDataSource {
         guard section == 0 else { return nil }
         
         let headerView = ProfileTableHeaderView()
-        headerView.profile = self.profiles[4]
+        headerView.configure(self.profiles[4], tableView: tableView)
         return headerView
     }
 }

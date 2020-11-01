@@ -21,6 +21,7 @@
 		DB455A0D2535DAEB006DB535 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB455A0C2535DAEB006DB535 /* LogInViewController.swift */; };
 		DB48163E253ADAEA002C12F8 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB48163D253ADAEA002C12F8 /* Profile.swift */; };
 		DB481643253C8AD8002C12F8 /* PhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB481642253C8AD8002C12F8 /* PhotosTableViewCell.swift */; };
+		DB5BAECD2546D907005DFCF4 /* MaxImageStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5BAECC2546D907005DFCF4 /* MaxImageStackView.swift */; };
 		DB65D6472541F010006E042B /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB65D6462541F010006E042B /* PhotosCollectionViewCell.swift */; };
 		DB691C7225377FD4007E02F7 /* ProfileTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB691C7125377FD4007E02F7 /* ProfileTableHeaderView.swift */; };
 		DB691C762537889B007E02F7 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB691C752537889B007E02F7 /* PostTableViewCell.swift */; };
@@ -49,6 +50,7 @@
 		DB455A0C2535DAEB006DB535 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		DB48163D253ADAEA002C12F8 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		DB481642253C8AD8002C12F8 /* PhotosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosTableViewCell.swift; sourceTree = "<group>"; };
+		DB5BAECC2546D907005DFCF4 /* MaxImageStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxImageStackView.swift; sourceTree = "<group>"; };
 		DB65D6462541F010006E042B /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
 		DB691C7125377FD4007E02F7 /* ProfileTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableHeaderView.swift; sourceTree = "<group>"; };
 		DB691C752537889B007E02F7 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				DB691C7125377FD4007E02F7 /* ProfileTableHeaderView.swift */,
 				DB691C752537889B007E02F7 /* PostTableViewCell.swift */,
 				DB481642253C8AD8002C12F8 /* PhotosTableViewCell.swift */,
+				DB5BAECC2546D907005DFCF4 /* MaxImageStackView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				DB481643253C8AD8002C12F8 /* PhotosTableViewCell.swift in Sources */,
 				DB65D6472541F010006E042B /* PhotosCollectionViewCell.swift in Sources */,
 				DB0E5FB425419D4100569ECB /* PhotosViewController.swift in Sources */,
+				DB5BAECD2546D907005DFCF4 /* MaxImageStackView.swift in Sources */,
 				DB48163E253ADAEA002C12F8 /* Profile.swift in Sources */,
 				DBE2886B2536291A004C9522 /* UIView+Autolayout.swift in Sources */,
 				060782B6250CE27700A87020 /* FeedViewController.swift in Sources */,

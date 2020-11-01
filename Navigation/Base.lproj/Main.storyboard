@@ -3,7 +3,7 @@
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -54,20 +54,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uNS-dt-dIA">
-                                <rect key="frame" x="10" y="88" width="355" height="70"/>
+                                <rect key="frame" x="10" y="88" width="355" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNK-ZF-VyQ">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <segue destination="Gpo-I4-SnC" kind="show" id="b1h-P3-5e6"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ny-Cw-hty">
-                                        <rect key="frame" x="0.0" y="40" width="355" height="30"/>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <segue destination="Gpo-I4-SnC" kind="show" id="pqE-TY-kFB"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -140,7 +133,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="0O8-tr-oe2">
             <objects>
-                <tabBarController id="VVa-ty-c3K" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="myTabBarController" id="VVa-ty-c3K" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fGo-88-qdc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -210,9 +203,6 @@
             <point key="canvasLocation" x="2516" y="199.50738916256159"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="pqE-TY-kFB"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
