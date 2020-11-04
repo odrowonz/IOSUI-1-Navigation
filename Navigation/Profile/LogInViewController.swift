@@ -85,28 +85,10 @@ class LogInViewController: UIViewController {
         return scrollView
     }()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Спрятать навигационную панель
-        navigationController?.setNavigationBarHidden(true, animated: true)
-
-        view.backgroundColor = .white
-        
-        setupLayout()
-        
-        // Keyboard observers
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
-        
-        // Нажатие на фон чтобы скрыть клавиатуру
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapBackground))
-        contentView.addGestureRecognizer(tapGesture)
-    }
-    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        view.backgroundColor = .white
         setupLayout()
             
         // Спрятать навигационную панель
@@ -115,6 +97,10 @@ class LogInViewController: UIViewController {
         // Keyboard observers
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+        // Нажатие на фон чтобы скрыть клавиатуру
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapBackground))
+        contentView.addGestureRecognizer(tapGesture)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
